@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>Sagnik Mukherjee's Math Page</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+	
+</head>
+
+<body>
+
+	<section class="sub-header">
+		<nav>
+			<!-- <a href="index.html"><img src="images/logo.png"></a> -->
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="math.html">HOME</a></li>
+						<li><a href="teaching.html">TEACHING</a></li>
+						<li><a href="publication.html">PUBLICATION</a></li>
+						<li><a href="exposition.html">EXPOSITION</a></li>
+						<!-- <li><a href="index.html">Personal Page</a></li> -->
+					</ul>
+			</div>	
+			<i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+		</nav>
+		<h1>MATH WEBPAGE</h1>
+	</section>	
+	
+	<!--------------------------- Math Content ------------------------------->
+	
+	<section class = "about-me">
+		<div class="row">
+			<div class="about-col">
+				<h1>About Me:</h1>
+				<p> I am a graduate student of Mathematics at the
+				<a href="https://cse.umn.edu/math">
+				University of Minnesota</a>,
+				Twin Cities.<br>
+				My primary interest is in Algebraic Number Theory, Arithmetic Statistics and Arithmetic 
+				Geometry. 
+				Currently, I am studying an
+				inter-relation between Iwasawa theory and 
+				Arithmetic Statistics under the guidance of Anwesh Ray. From Fall-2022, I have a wish
+				to explore Langlands, and inter-relation between Representation theory and Number theory, etc.
+				</p>
+				
+				<h2> Education:</h2>
+				<p><span style="color:blue;"><b>August, 2019 - May, 2022:</b></span> B.Sc. Hons. 
+				in Mathematics and Computer Science. <br>(from <a href="https://www.cmi.ac.in/">
+				Chennai Mathematical Institute</a>)
+				<br><br>
+				<span style="color:violet;"><b>August, 2022 - Present:</b></span> Ph.D. in Mathematics. 
+				<br> (from University of Minnesota, Twin Cities)
+				<br><br>
+				See my <a href="file:///C:/Users/HP/Desktop/Webpage/math_files/CV_sagnik.pdf">CV</a> for 
+				detailed information on education, publication, conferences, etc.
+				</p>
+				
+				<h2>Employment:</h2>
+				<p>I am a graduate teaching assistant at University of Minnesota, Twin Cities. This fall,
+				I shall be TA-ing the <b> Calculus-I</b> (MATH 1271) course. See the <a href="teaching.html">TEACHING</a>
+				page for more information on this.</p>
+				
+				<h2> Contact & Office Address:</h2>
+				<p><b>Office Address:</b> Vincent 454; University of Minnesota, Twin Cities.<br> 
+				<b>Office Hours:</b>  TBA.<br>
+				<b>GMail Address: <a href="mukhe136@umn.edu">mukhe136@umn.edu</a></b>
+				</p>
+				
+			</div>
+			<div class="about-col">
+				<img src="images/sagnik_mukherjee_5.jpg">
+			</div>
+		</div>
+	</section>
+		
+		
+	
+	
+	
+	
+	
+<!-----javascript for toggle of menu------->	
+	
+<script>
+
+	var navLinks = document.getElementById("navLinks");
+	
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+
+</script>
+<!-----javascript for toggle of menu------->
+	
+	
+	
+	
+</body>
+
+</html>
