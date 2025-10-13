@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sagnik Mukherjee - notMaths</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Georgia", serif;
+      background: linear-gradient(to right, #e8f1fb, #cfdcf0);
+      color: #1e293b;
+      overflow-x: hidden;
+    }
+
+    /* Fixed Tab Bar */
+    .tab {
+      overflow: hidden;
+      background-color: rgba(255,255,255,0.8);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      text-align: left;
+      padding: 6px 0;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .tab button {
+      background-color: inherit;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 20px;
+      font-family: 'Georgia', serif;
+      font-size: 22px;
+      letter-spacing: 1.5px;
+      color: rgb(87, 47, 155);
+      transition: 0.3s;
+    }
+
+    .tab button:hover {
+      background-color: rgba(0,0,0,0.1);
+    }
+
+    .tab button.active {
+      background-color: rgba(0,0,0,0.15);
+    }
+
+    /* Content */
+    .content-wrapper {
+      padding-top: 110px;
+      padding-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      color: #253659;
+      text-shadow: 0 0 10px rgba(37, 54, 89, 0.2);
+      margin-bottom: 40px;
+    }
+
+    /* Card Styling */
+    .card {
+      width: 80%;
+      max-width: 700px;
+      background: linear-gradient(180deg, #ffffff, #e7ebf5);
+      border-radius: 20px;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+      margin-bottom: 60px;
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+    }
+
+    /* Image fully visible without cropping */
+    .card img {
+      width: 100%;
+      height: auto;
+      max-height: 520px;
+      object-fit: contain;     /* no cropping */
+      background-color: #e5e9f0; /* fills behind narrow images */
+      display: block;
+      transition: transform 0.4s ease, filter 0.4s ease;
+      filter: brightness(95%);
+    }
+
+    .card:hover img {
+      transform: scale(1.02);
+      filter: brightness(100%);
+    }
+
+    .card-content {
+      padding: 30px 40px 35px 40px;
+      text-align: center;
+    }
+
+    .card-content h2 {
+      font-size: 1.9em;
+      color: #2f3b63;
+      margin: 10px 0 15px 0;
+    }
+
+    .card-content p {
+      font-size: 1.08em;
+      color: #334155;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .card-content .more {
+      display: inline-block;
+      font-size: 1em;
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 1px solid transparent;
+      transition: 0.3s;
+    }
+
+    .card-content .more:hover {
+      border-bottom: 1px solid #4f46e5;
+    }
+    .photo-caption {
+        font-size: 0.9em;
+        color: #555;
+        font-style: italic;
+        background-color: rgba(255,255,255,0.8);
+        padding: 6px 10px;
+        text-align: center;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .card img {
+        max-height: 300px;
+      }
+      .card-content {
+        padding: 20px 25px 30px 25px;
+      }
+      .card-content h2 {
+        font-size: 1.6em;
+      }
+      .card-content p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Fixed Tab Bar -->
+  <div class="tab">
+    <button onclick="location.href='../index.html'">Home</button>
+    <button onclick="location.href='../pages/aboutme.html'">About Me</button>
+    <button onclick="location.href='../pages/teaching.html'">Teaching</button>
+    <button onclick="location.href='../pages/seminars.html'">Seminars</button>
+    <button onclick="location.href='../pages/exposition.html'">Exposition</button>
+    <button class="active" onclick="location.href='../pages/notmath.html'">notMaths</button>
+  </div>
+
+  <div class="content-wrapper">
+    <h1>Beyond Mathematics</h1>
+    <p>Mathematics isn’t my only source of joy. This page celebrates the other passions that bring me just as much happiness.</p>
+
+    
+    <div class="card">
+      <img src="../assets/img/jpg/Indian_Classical_music.png" alt="Indian Classical Music">
+      <div class="photo-caption">Indian Gods immersed into divine musical moment</div>
+      <div class="card-content">
+        <h2>Indian Classical Music</h2>
+        <p></p>
+        <a href="music.html" class="more">Read More →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../assets/img/Photos for Voyage/Angels Landing.jpeg" alt="Voyage">
+      <div class="photo-caption">On the way to Scout's Lookout</div>
+      <div class="card-content">
+        <h2>Voyage</h2>
+        <p>Dumping photos from some of my past Trips</p>
+        <a href="philosophy.html" class="more">Read More →</a>
+      </div>
+    </div>
+
+    
+
+  <div class="footer">© 2025 Sagnik Mukherjee</div>
+</body>
+</html>
